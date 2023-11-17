@@ -561,7 +561,7 @@ video {
 }
 
 .container {
-  width: 33.333333%;
+  width: 35rem;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(34 35 39 / var(--tw-bg-opacity));
@@ -614,6 +614,14 @@ video {
   padding: 1rem;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form button:hover {
+  --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 #weather-data {
